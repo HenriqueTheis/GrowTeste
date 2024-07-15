@@ -1,0 +1,42 @@
+.image_logo {
+    width: 6.5%;
+}
+
+.banner_background {
+    background: url(../assets/images/banner-initial.png);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.button_default {
+    background-color: #B6060F;
+    border-color: #B6060F;
+    color: white;
+    border: 1px solid #B6060F;
+    border-radius: 8px;
+    width: 175px;
+    height: 75px;
+    font-size: x-large;
+}
+
+.button_default:hover {
+    background-color: #E50914;
+    background-color: #E50914;
+    color: white;
+}
+
+.separator_line {
+    color: white;
+    border: 2px solid;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-plus-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2'/%3E%3C/svg%3E");
+    transition: all 0.5s;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' fill='white' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/%3E%3C/svg%3E");
+}
